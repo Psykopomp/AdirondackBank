@@ -103,15 +103,15 @@
 
     <!-- Carousel -->
 
-    <div class="bg-white font-sans leading-normal tracking-normal">
+    <div class="carousel bg-white font-sans leading-normal tracking-normal">
 
-        <div class="carousel relative shadow-2xl bg-white">
+        <div class="carousel relative shadow-xl bg-white">
             <div class="carousel-inner relative overflow-hidden w-full">
                 <!--Slide 1-->
                 <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
                     checked="checked">
                 <div class="carousel-item absolute opacity-0" style="height:50vh;">
-                    <div class="block h-full w-full bg-indigo-500 text-white text-5xl text-center">Slide 1</div>
+                    <div class="block h-full w-full bg-indigo-900 text-white text-5xl text-center">Slide 1</div>
                 </div>
                 <label for="carousel-3"
                     class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
@@ -180,42 +180,44 @@
         <!-- CAMPAIGN CARDS COMPONENT -->
         <div
             class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 flex content-center text-center">
-            <div class="grid gap-24 row-gap-5 sm:grid-cols-1 lg:grid-cols-3">
-                <div class="flex flex-col justify-center p-5 border rounded shadow-sm">
+            <div class="grid gap-20 row-gap-5 sm:grid-cols-1 lg:grid-cols-3">
+                <div class="flex flex-col justify-between p-5 border rounded shadow-xl">
                     <div>
-                        <img src="img/card-placeholder-img.png" alt="" class="transform scale-75 flex inline-flex items-center lg:mx-auto object-contain lg:object-scale-down">
+                        <img src="img/card-placeholder-img.png" alt="" class=" flex inline-flex items-center lg:mx-auto object-contain lg:object-scale-down">
 
-                        <h6 class="mb-2 leading-none font-bold text-lg tracking-wide text-green-700">CAMPAIGN TITLE</h6>
-                        <p class="mb-3 text-sm text-gray-900">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet asperiores dignissimos
-                            pariatur magni unde ad, eius, </p>
-                        <p class="flex inline-flex font-semibold pt-5 transform scale-75">Get Started</p>
-
-
-                    </div>
-                </div>
-                <div class="flex flex-col justify-between p-5 border rounded shadow-sm">
-                    <div>
-                        <img src="img/card-placeholder-img.png" alt="" class="transform scale-75 flex inline-flex items-center lg:mx-auto object-contain lg:object-scale-down">
-
-                        <h6 class="mb-2 leading-none font-bold text-lg tracking-wide text-green-700">CAMPAIGN TITLE</h6>
+                        <h6 class="py-4 leading-none font-bold text-lg tracking-wide text-green-700">CAMPAIGN TITLE</h6>
                         <p class="mb-3 text-sm text-green-600">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet asperiores dignissimos
                             pariatur magni unde ad, eius,
                         </p>
-                        <p class="flex inline-flex font-semibold pt-5 transform scale-75">Get Started</p>
-
+                        <p class="flex inline-flex font-semibold pt-5 pb-0\.5 tracking-wider transform scale-75">Get Started</p>
+                        <a href="#" class="flex bg-green-700 transform rounded-full text-white h-6 w-6 font-mono items-center justify-center mx-auto">></a>
                     </div>
                 </div>
-                <div class="flex flex-col justify-between p-5 border rounded shadow-sm">
+                <div class="flex flex-col justify-between p-5 border rounded shadow-xl">
                     <div>
-                        <img src="img/card-placeholder-img.png" alt="" class="transform scale-75 flex inline-flex items-center lg:mx-auto object-contain lg:object-scale-down">
+                        <img src="img/card-placeholder-img.png" alt="" class=" flex inline-flex items-center lg:mx-auto object-contain lg:object-scale-down">
 
-                        <h6 class="mb-2 leading-none font-bold text-lg tracking-wide text-green-700">CAMPAIGN TITLE</h6>
-                        <p class="mb-3 text-sm text-gray-900">
+                        <h6 class="py-4 leading-none font-bold text-lg tracking-wide text-green-700">CAMPAIGN TITLE</h6>
+                        <p class="mb-3 text-sm text-green-600">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet asperiores dignissimos
-                            pariatur magni unde ad, eius, </p>
-                        <p class="flex inline-flex font-semibold pt-5 transform scale-75">Get Started</p>
+                            pariatur magni unde ad, eius,
+                        </p>
+                        <p class="flex inline-flex font-semibold pt-5 pb-0\.5 tracking-wider transform scale-75">Get Started</p>
+                        <a href="#" class="flex bg-green-700 transform rounded-full text-white h-6 w-6 font-mono items-center justify-center mx-auto">></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-between p-5 border rounded shadow-xl">
+                    <div>
+                        <img src="img/card-placeholder-img.png" alt="" class=" flex inline-flex items-center lg:mx-auto object-contain lg:object-scale-down">
+
+                        <h6 class="py-4 leading-none font-bold text-lg tracking-wide text-green-700">CAMPAIGN TITLE</h6>
+                        <p class="mb-3 text-sm text-green-600">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet asperiores dignissimos
+                            pariatur magni unde ad, eius,
+                        </p>
+                        <p class="flex inline-flex font-semibold pt-5 pb-0\.5 tracking-wider transform scale-75">Get Started</p>
+                        <a href="#" class="flex bg-green-700 transform rounded-full text-white h-6 w-6 font-mono items-center justify-center mx-auto">></a>
                     </div>
                 </div>
             </div>
@@ -224,9 +226,55 @@
 
 
 
+
+        <!-- DIVIDER COMPONENT -->
+        <div class="p-5 bg-green-700"></div>
         <!-- NEWS CARDS COMPONENT -->
 
+        <div
+            class="px-4 py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-16 flex content-center text-center">
+            <div class="grid gap-20 row-gap-5 sm:grid-cols-1 lg:grid-cols-3">
+                <div class="flex flex-col justify-between p-5 border rounded shadow-xl">
+                    <div>
+                        <img src="img/card-placeholder-img.png" alt="" class=" flex inline-flex items-center lg:mx-auto object-contain lg:object-scale-down">
 
+                        <h6 class="py-4 leading-none font-bold text-lg tracking-wide text-green-700">CAMPAIGN TITLE</h6>
+                        <p class="mb-3 text-sm text-green-600">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet asperiores dignissimos
+                            pariatur magni unde ad, eius,
+                        </p>
+                        <p class="flex inline-flex font-semibold pt-5 pb-0\.5 tracking-wider transform scale-75">Get Started</p>
+                        <a href="#" class="flex bg-green-700 transform rounded-full text-white h-6 w-6 font-mono items-center justify-center mx-auto">></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-between p-5 border rounded shadow-xl">
+                    <div>
+                        <img src="img/card-placeholder-img.png" alt="" class=" flex inline-flex items-center lg:mx-auto object-contain lg:object-scale-down">
+
+                        <h6 class="py-4 leading-none font-bold text-lg tracking-wide text-green-700">CAMPAIGN TITLE</h6>
+                        <p class="mb-3 text-sm text-green-600">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet asperiores dignissimos
+                            pariatur magni unde ad, eius,
+                        </p>
+                        <p class="flex inline-flex font-semibold pt-5 pb-0\.5 tracking-wider transform scale-75">Get Started</p>
+                        <a href="#" class="flex bg-green-700 transform rounded-full text-white h-6 w-6 font-mono items-center justify-center mx-auto">></a>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-between p-5 border rounded shadow-xl">
+                    <div>
+                        <img src="img/card-placeholder-img.png" alt="" class=" flex inline-flex items-center lg:mx-auto object-contain lg:object-scale-down">
+
+                        <h6 class="py-4 leading-none font-bold text-lg tracking-wide text-green-700">CAMPAIGN TITLE</h6>
+                        <p class="mb-3 text-sm text-green-600">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet asperiores dignissimos
+                            pariatur magni unde ad, eius,
+                        </p>
+                        <p class="flex inline-flex font-semibold pt-5 pb-0\.5 tracking-wider transform scale-75">Get Started</p>
+                        <a href="#" class="flex bg-green-700 transform rounded-full text-white h-6 w-6 font-mono items-center justify-center mx-auto">></a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
