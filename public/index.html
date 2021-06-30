@@ -10,7 +10,7 @@
     <title>Adirondack Bank</title>
 </head>
 
-    <body>
+<body>
 
 
 
@@ -18,65 +18,188 @@
 
     <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div class="relative flex grid items-center grid-cols-2 lg:grid-cols-3">
-          <ul class="flex items-center hidden space-x-8 lg:flex">
-            <li><a href="/" aria-label="Visit adirondackbank.com" title="Visit adirondackbank.com" class="font-bold text-sm tracking-wide text-gray-900">Visit <text class="text-green-700 font-extrabold transition-colors duration-200 hover:text-green-600" href="adirondackbank.com">adirondackbank.com</text></a></li>
-          </ul>
-          <a href="/" aria-label="adirondack-logo" title="adirondack-logo" class="inline-flex items-center lg:mx-auto object-contain lg:object-scale-down">
-            <img src="img/adirondack-logo.png" alt="" class="transform scale-75">
-          </a>
-          <ul class="flex items-center hidden ml-auto space-x-8 lg:flex">
-            <li><a href="/" aria-label="Promotions & Offers" title="Promotions & Offers" class="font-bold text-sm tracking-wide text-green-700 transition-colors duration-200 hover:text-green-600">Promotions & Offers</a></li>
-            <li><a href="/" aria-label="Latest News" title="Latest News" class="font-bold text-sm tracking-wide text-green-700 transition-colors duration-200 hover:text-green-600">Latest News</a></li>
-            <li><a href="/" aria-label="Locations" title="Locations" class="font-bold text-sm tracking-wide text-green-700 transition-colors duration-200 hover:text-green-600">Locations</a></li>
+            <ul class="flex items-center hidden space-x-8 lg:flex">
+                <li><a href="/" aria-label="Visit adirondackbank.com" title="Visit adirondackbank.com"
+                        class="font-bold text-sm tracking-wide text-gray-900">Visit <text
+                            class="text-green-700 font-extrabold transition-colors duration-200 hover:text-green-600"
+                            href="adirondackbank.com">adirondackbank.com</text></a></li>
+            </ul>
+            <a href="/" aria-label="adirondack-logo" title="adirondack-logo"
+                class="inline-flex items-center lg:mx-auto object-contain lg:object-scale-down">
+                <img src="img/adirondack-logo.png" alt="" class="transform scale-75">
+            </a>
+            <ul class="flex items-center hidden ml-auto space-x-8 lg:flex">
+                <li><a href="/" aria-label="Promotions & Offers" title="Promotions & Offers"
+                        class="font-bold text-sm tracking-wide text-green-700 transition-colors duration-200 hover:text-green-600">Promotions
+                        & Offers</a></li>
+                <li><a href="/" aria-label="Latest News" title="Latest News"
+                        class="font-bold text-sm tracking-wide text-green-700 transition-colors duration-200 hover:text-green-600">Latest
+                        News</a></li>
+                <li><a href="/" aria-label="Locations" title="Locations"
+                        class="font-bold text-sm tracking-wide text-green-700 transition-colors duration-200 hover:text-green-600">Locations</a>
+                </li>
 
-          </ul>
+            </ul>
 
-          <!-- MOBILE MENU -->
-          <div class="ml-auto lg:hidden">
-            <button aria-label="Open Menu" title="Open Menu" class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline">
-              <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path>
-                <path fill="currentColor" d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"></path>
-                <path fill="currentColor" d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"></path>
-              </svg>
-            </button>
-          </div>
+            <!-- MOBILE MENU -->
+            <div class="ml-auto lg:hidden">
+                <button aria-label="Open Menu" title="Open Menu"
+                    class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline">
+                    <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path>
+                        <path fill="currentColor" d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z">
+                        </path>
+                        <path fill="currentColor"
+                            d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"></path>
+                    </svg>
+                </button>
+            </div>
         </div>
-      </div>
+    </div>
 
 
 
 
     <!-- CAROUSEL COMPONENT-->
- 
+    <style>
+        .carousel-open:checked+.carousel-item {
+            position: static;
+            opacity: 100;
+        }
+
+        .carousel-item {
+            -webkit-transition: opacity 0.6s ease-out;
+            transition: opacity 0.6s ease-out;
+        }
+
+        #carousel-1:checked~.control-1,
+        #carousel-2:checked~.control-2,
+        #carousel-3:checked~.control-3,
+        #carousel-4:checked~.control-4 {
+            display: block;
+        }
+
+        .carousel-indicators {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            bottom: 2%;
+            left: 0;
+            right: 0;
+            text-align: center;
+            z-index: 10;
+        }
+
+        #carousel-1:checked~.control-1~.carousel-indicators li:nth-child(1) .carousel-bullet,
+        #carousel-2:checked~.control-2~.carousel-indicators li:nth-child(2) .carousel-bullet,
+        #carousel-3:checked~.control-3~.carousel-indicators li:nth-child(3) .carousel-bullet,
+        #carousel-4:checked~.control-4~.carousel-indicators li:nth-child(4) .carousel-bullet {
+            color: #2b6cb0;
+            /*Set to match the Tailwind colour you want the active one to be */
+        }
+    </style>
+
+    <!-- Carousel -->
+
+    <div class="bg-white font-sans leading-normal tracking-normal">
+
+        <div class="carousel relative shadow-2xl bg-white">
+            <div class="carousel-inner relative overflow-hidden w-full">
+                <!--Slide 1-->
+                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
+                    checked="checked">
+                <div class="carousel-item absolute opacity-0" style="height:50vh;">
+                    <div class="block h-full w-full bg-indigo-500 text-white text-5xl text-center">Slide 1</div>
+                </div>
+                <label for="carousel-3"
+                    class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                <label for="carousel-2"
+                    class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+                <!--Slide 2-->
+                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item absolute opacity-0" style="height:50vh;">
+                    <div class="block h-full w-full bg-orange-500 text-white text-5xl text-center">Slide 2</div>
+                </div>
+                <label for="carousel-1"
+                    class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                <label for="carousel-3"
+                    class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+                <!--Slide 3-->
+                <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item absolute opacity-0" style="height:50vh;">
+                    <div class="block h-full w-full bg-green-500 text-white text-5xl text-center">Slide 3</div>
+                </div>
+                <label for="carousel-2"
+                    class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                <label for="carousel-4"
+                    class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+
+                <!--Slide 4-->
+                <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item absolute opacity-0" style="height:50vh;">
+                    <div class="block h-full w-full bg-green-500 text-white text-5xl text-center">Slide 3</div>
+                </div>
+                <label for="carousel-3"
+                    class="prev control-4 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                <label for="carousel-1"
+                    class="next control-4 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+                <!-- Add additional indicators for each slide-->
+                <ol class="carousel-indicators">
+                    <li class="inline-block mr-3">
+                        <label for="carousel-1"
+                            class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                    </li>
+                    <li class="inline-block mr-3">
+                        <label for="carousel-2"
+                            class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                    </li>
+                    <li class="inline-block mr-3">
+                        <label for="carousel-3"
+                            class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                    </li>
+                    <li class="inline-block mr-3">
+                        <label for="carousel-4"
+                            class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                    </li>
+                </ol>
+
+            </div>
+        </div>
+        <div />
 
 
 
 
 
-    <!-- CAMPAIGN CARDS COMPONENT -->
+        <!-- CAMPAIGN CARDS COMPONENT -->
 
 
 
 
 
-    <!-- NEWS CARDS COMPONENT -->
+        <!-- NEWS CARDS COMPONENT -->
 
 
 
 
 
-    <!-- MAP COMPONENT -->
+        <!-- MAP COMPONENT -->
 
 
 
 
 
-    <!-- FOOTER COMPONENT -->
+        <!-- FOOTER COMPONENT -->
 
 
 
-    
-    </body>
+
+</body>
 
 </html>
