@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.adirondackbank.com/favicon.ico">
     <title>Adirondack Bank</title>
 </head>
 
@@ -76,27 +76,31 @@
 
         .carousel-item-1 {
             background-image: url("img/carousel1.png");
+            background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             height: 50vh;
         }
 
         .carousel-item-2 {
-            background-image: url("img/carousel1.png");
+            background-color: darkslategray;
+            background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             height: 50vh;
         }
 
         .carousel-item-3 {
-            background-image: url("img/carousel1.png");
+            background-color: darkslateblue;
+            background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             height: 50vh;
         }
 
         .carousel-item-4 {
-            background-image: url("img/carousel1.png");
+            background-color: darkseagreen;
+            background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             height: 50vh;
@@ -126,8 +130,7 @@
         #carousel-2:checked~.control-2~.carousel-indicators li:nth-child(2) .carousel-bullet,
         #carousel-3:checked~.control-3~.carousel-indicators li:nth-child(3) .carousel-bullet,
         #carousel-4:checked~.control-4~.carousel-indicators li:nth-child(4) .carousel-bullet {
-            color: #2b6cb0;
-            /*Set to match the Tailwind colour you want the active one to be */
+            color: rgba(4, 120, 87);
         }
     </style>
 
@@ -160,7 +163,7 @@
 
                 <!--Slide 3-->
                 <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-                <div class="carousel-item carousel-item-1 absolute opacity-0" style="height:50vh;">
+                <div class="carousel-item carousel-item-3 absolute opacity-0" style="height:50vh;">
                     <div class="block h-full w-full text-white text-5xl text-center"></div>
                 </div>
                 <label for="carousel-2"
@@ -171,7 +174,7 @@
 
                 <!--Slide 4-->
                 <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
-                <div class="carousel-item carousel-item-1 absolute opacity-0" style="height:50vh;">
+                <div class="carousel-item carousel-item-4 absolute opacity-0" style="height:50vh;">
                     <div class="block h-full w-full text-white text-5xl text-center">Hello</div>
                 </div>
                 <label for="carousel-3"
@@ -280,7 +283,7 @@
             <div class="grid gap-6 row-gap-5 sm:grid-cols-1 lg:grid-cols-3">
                 <div class="flex flex-col justify-between p-5 border rounded shadow-xl">
                     <div>
-                        <img src="img/card-img-1.jpg" alt=""
+                        <img src="img/card-img-1.jpg" alt="news card image"
                             class="items-center lg:mx-auto object-contain lg:object-scale-down">
 
                         <h6 class="pt-4 pb-2 leading-none font-extrabold text-lg tracking-wide text-green-600">PPP EZ Loan
@@ -294,7 +297,7 @@
                 </div>
                 <div class="flex flex-col justify-between p-5 border rounded shadow-xl">
                     <div>
-                        <img src="img/card-img-2.jpg" alt=""
+                        <img src="img/card-img-2.jpg" alt="news card image"
                             class="items-center lg:mx-auto object-contain lg:object-scale-down">
 
                         <h6 class="py-4 leading-none font-extrabold text-lg tracking-wide text-green-600">PPP Loan Program
@@ -309,7 +312,7 @@
                 </div>
                 <div class="flex flex-col justify-between p-5 border rounded shadow-xl">
                     <div>
-                        <img src="./img/card-img-3.jpg" alt=""
+                        <img src="./img/card-img-3.jpg" alt="news card image"
                             class="items-center lg:mx-auto object-contain lg:object-scale-down">
 
                         <h6 class="py-4 leading-none font-extrabold text-lg tracking-wide text-green-600">Branch Lobbies Now
@@ -362,8 +365,7 @@
             <div class="container mx-auto px-6">
                 <div class="mt-5 flex-row mx-auto text-center">
                     <div class="text-center py-6">
-
-                        <a class="text-sm text-green-700 font-bold mb-2">
+                        <a href="https://goo.gl/maps/2tMprKgGjq4ptkxF9" class="text-sm text-green-700 font-bold mb-2">
                             <p>185 Genesee Street
                                 <br /> Utica, NY 13501
                             </p>
