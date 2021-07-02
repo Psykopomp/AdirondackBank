@@ -71,6 +71,35 @@
         .carousel-item {
             -webkit-transition: opacity 0.6s ease-out;
             transition: opacity 0.6s ease-out;
+
+        }
+
+        .carousel-item-1 {
+            background-image: url("img/carousel1.png");
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+        }
+
+        .carousel-item-2 {
+            background-image: url("img/carousel1.png");
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+        }
+
+        .carousel-item-3 {
+            background-image: url("img/carousel1.png");
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+        }
+
+        .carousel-item-4 {
+            background-image: url("img/carousel1.png");
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
         }
 
         #carousel-1:checked~.control-1,
@@ -92,6 +121,7 @@
             z-index: 10;
         }
 
+
         #carousel-1:checked~.control-1~.carousel-indicators li:nth-child(1) .carousel-bullet,
         #carousel-2:checked~.control-2~.carousel-indicators li:nth-child(2) .carousel-bullet,
         #carousel-3:checked~.control-3~.carousel-indicators li:nth-child(3) .carousel-bullet,
@@ -103,69 +133,69 @@
 
     <!-- Carousel -->
 
-    <div class="carousel bg-white font-sans leading-normal tracking-normal">
+    <div class="carousel w-screen leading-normal tracking-normal">
 
         <div class="carousel relative shadow-xl bg-white">
             <div class="carousel-inner relative overflow-hidden w-full">
                 <!--Slide 1-->
                 <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
                     checked="checked">
-                <div class="carousel-item absolute opacity-0" style="height:50vh;">
-                    <div class="block h-full w-full bg-indigo-900 text-white text-5xl text-center">Slide 1</div>
+                <div class="carousel-item carousel-item-1 transform absolute lg:object-scale-down " style="height:50vh;">
+                    <div class="block h-full w-full text-white text-5xl text-center"></div>
                 </div>
-                <label for="carousel-3"
-                    class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                <label for="carousel-4"
+                class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-white rounded-full  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
                 <label for="carousel-2"
-                    class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
-
+                class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-white rounded-full  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+                
                 <!--Slide 2-->
                 <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-                <div class="carousel-item absolute opacity-0" style="height:50vh;">
-                    <div class="block h-full w-full bg-orange-500 text-white text-5xl text-center">Slide 2</div>
+                <div class="carousel-item carousel-item-2 absolute opacity-0" style="height:50vh;">
+                    <div class="block h-full w-full  text-white text-5xl text-center"></div>
                 </div>
                 <label for="carousel-1"
-                    class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-white rounded-full  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
                 <label for="carousel-3"
-                    class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+                    class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-white rounded-full  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
 
                 <!--Slide 3-->
                 <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-                <div class="carousel-item absolute opacity-0" style="height:50vh;">
-                    <div class="block h-full w-full bg-green-500 text-white text-5xl text-center">Slide 3</div>
+                <div class="carousel-item carousel-item-1 absolute opacity-0" style="height:50vh;">
+                    <div class="block h-full w-full text-white text-5xl text-center"></div>
                 </div>
                 <label for="carousel-2"
-                    class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                    class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-white rounded-full  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
                 <label for="carousel-4"
-                    class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+                    class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-white rounded-full  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
 
 
                 <!--Slide 4-->
                 <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
-                <div class="carousel-item absolute opacity-0" style="height:50vh;">
-                    <div class="block h-full w-full bg-green-500 text-white text-5xl text-center">Slide 3</div>
+                <div class="carousel-item carousel-item-1 absolute opacity-0" style="height:50vh;">
+                    <div class="block h-full w-full text-white text-5xl text-center">Hello</div>
                 </div>
                 <label for="carousel-3"
-                    class="prev control-4 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                    class="prev control-4 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-white rounded-full  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
                 <label for="carousel-1"
-                    class="next control-4 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+                    class="next control-4 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-white rounded-full  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
 
                 <!-- Add additional indicators for each slide-->
                 <ol class="carousel-indicators">
                     <li class="inline-block mr-3">
                         <label for="carousel-1"
-                            class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                            class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-green-700">•</label>
                     </li>
                     <li class="inline-block mr-3">
                         <label for="carousel-2"
-                            class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                            class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-green-700">•</label>
                     </li>
                     <li class="inline-block mr-3">
                         <label for="carousel-3"
-                            class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                            class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-green-700">•</label>
                     </li>
                     <li class="inline-block mr-3">
                         <label for="carousel-4"
-                            class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                            class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-green-700">•</label>
                     </li>
                 </ol>
 
@@ -179,51 +209,51 @@
 
         <!-- CAMPAIGN CARDS COMPONENT -->
         <div
-            class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-30 lg:py-20 flex content-center text-center">
-            <div class="grid gap-12 row-gap-5 sm:grid-cols-1 lg:grid-cols-3">
+            class="px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-30 lg:py-20 flex content-center text-center">
+            <div class="grid gap-6 sm:grid-cols-1 lg:grid-cols-3">
                 <div class="flex flex-col justify-between p-5 border rounded shadow-xl">
                     <div>
-                        <img src="img/card-placeholder-img.png" alt=""
-                            class="items-center lg:mx-auto object-contain lg:object-scale-down">
+                        <img src="img/card-placeholder-img.png" alt="placeholder image"
+                            class="items-center mx-auto object-contain lg:object-scale-down">
 
-                        <h6 class="py-4 leading-none font-bold text-lg tracking-wide text-green-700">CAMPAIGN TITLE</h6>
-                        <p class="mb-3 text-sm text-green-600">
+                        <h4 class="pt-4 leading-none font-extrabold text-lg tracking-wide text-green-600">CAMPAIGN TITLE</h4>
+                        <p class="mb-3 pt-2 font-medium text-medium text-green-500">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet asperiores dignissimos
                             pariatur magni unde ad, eius,
                         </p>
                         <p class="font-semibold pt-5 pb-0\.5 tracking-wider transform scale-75">Get Started</p>
                         <a href="#"
-                            class="flex bg-green-700 transform rounded-full text-white h-6 w-6 font-mono items-center justify-center mx-auto scale-x-125 scale-y-125">></a>
+                            class="flex bg-green-700 transform rounded-full text-xl text-white h-6 w-6 font-mono items-center justify-center mx-auto scale-x-125 scale-y-125">></a>
                     </div>
                 </div>
                 <div class="flex flex-col justify-between p-5 border rounded shadow-xl">
                     <div>
-                        <img src="img/card-placeholder-img.png" alt=""
-                            class="items-center lg:mx-auto object-contain lg:object-scale-down">
+                        <img src="img/card-placeholder-img.png" alt="placeholder image"
+                            class="items-center mx-auto object-contain lg:object-scale-down">
 
-                        <h6 class="py-4 leading-none font-bold text-lg tracking-wide text-green-700">CAMPAIGN TITLE</h6>
-                        <p class="mb-3 text-sm text-green-600">
+                        <h6 class="pt-4 leading-none font-extrabold text-lg tracking-wide text-green-600">CAMPAIGN TITLE</h6>
+                        <p class="mb-3 pt-2 font-medium text-medium text-green-500">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet asperiores dignissimos
                             pariatur magni unde ad, eius,
                         </p>
                         <p class="font-semibold pt-5 pb-0\.5 tracking-wider transform scale-75">Get Started</p>
                         <a href="#"
-                            class="flex bg-green-700 transform rounded-full text-white h-6 w-6 font-mono items-center justify-center mx-auto scale-x-125 scale-y-125">></a>
+                            class="flex bg-green-700 transform rounded-full text-xl text-white h-6 w-6 font-mono items-center justify-center mx-auto scale-x-125 scale-y-125">></a>
                     </div>
                 </div>
                 <div class="flex flex-col justify-between p-5 border rounded shadow-xl">
                     <div>
-                        <img src="img/card-placeholder-img.png" alt=""
-                            class="items-center lg:mx-auto object-contain lg:object-scale-down">
+                        <img src="img/card-placeholder-img.png" alt="placeholder image"
+                            class="items-center mx-auto object-contain lg:object-scale-down">
 
-                        <h6 class="py-4 leading-none font-bold text-lg tracking-wide text-green-700">CAMPAIGN TITLE</h6>
-                        <p class="mb-3 text-sm text-green-600">
+                        <h6 class="pt-4 leading-none font-extrabold text-lg tracking-wide text-green-600">CAMPAIGN TITLE</h6>
+                        <p class="mb-3 pt-2 font-medium text-medium text-green-500">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet asperiores dignissimos
                             pariatur magni unde ad, eius,
                         </p>
                         <p class="font-semibold pt-5 pb-0\.5 tracking-wider transform scale-75">Get Started</p>
                         <a href="#"
-                            class="flex bg-green-700 transform rounded-full text-white h-6 w-6 font-mono items-center justify-center mx-auto scale-x-125 scale-y-125">></a>
+                            class="flex bg-green-700 transform rounded-full text-xl text-white h-6 w-6 font-mono items-center justify-center mx-auto scale-x-125 scale-y-125">></a>
                     </div>
                 </div>
             </div>
@@ -246,20 +276,20 @@
         <!-- NEWS CARDS COMPONENT -->
 
         <div
-            class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-30 lg:py-20 flex content-center">
-            <div class="grid gap-12 row-gap-5 sm:grid-cols-1 lg:grid-cols-3">
+            class="px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-30 lg:py-16 flex content-center">
+            <div class="grid gap-6 row-gap-5 sm:grid-cols-1 lg:grid-cols-3">
                 <div class="flex flex-col justify-between p-5 border rounded shadow-xl">
                     <div>
                         <img src="img/card-img-1.jpg" alt=""
                             class="items-center lg:mx-auto object-contain lg:object-scale-down">
 
-                        <h6 class="pt-4 pb-2 leading-none font-bold text-lg tracking-wide text-green-700">PPP EZ Loan
+                        <h6 class="pt-4 pb-2 leading-none font-extrabold text-lg tracking-wide text-green-600">PPP EZ Loan
                             Forgiveness Form - Instructions, Checklist, & Application</h6>
                         <p class="mb-3 text-sm tracking-wide pt-1 pb-3">
                             You (the Borrower) can apply for forgiveness of your Paycheck Protection Program (PPP)...
                         </p>
                         <a href="#"
-                            class="flex bg-green-700 transform scale-x-125 scale-y-125 rounded-full text-white h-6 w-6 font-mono items-center justify-center mx-auto">></a>
+                            class="flex bg-green-700 transform scale-x-125 scale-y-125 rounded-full text-xl text-white h-6 w-6 font-mono items-center justify-center mx-auto">></a>
                     </div>
                 </div>
                 <div class="flex flex-col justify-between p-5 border rounded shadow-xl">
@@ -267,14 +297,14 @@
                         <img src="img/card-img-2.jpg" alt=""
                             class="items-center lg:mx-auto object-contain lg:object-scale-down">
 
-                        <h6 class="py-4 leading-none font-bold text-lg tracking-wide text-green-700">PPP Loan Program
+                        <h6 class="py-4 leading-none font-extrabold text-lg tracking-wide text-green-600">PPP Loan Program
                             Suspended</h6>
                         <p class="mb-3 text-sm tracking-wide pt-2 pb-9">
                             The Paycheck Protection Program (PPP) loan program has been suspended. We are no longer able
                             to accept applications.
                         </p>
                         <a href="#"
-                            class="flex bg-green-700 transform scale-x-125 scale-y-125 rounded-full text-white h-6 w-6 font-mono items-center justify-center mx-auto">></a>
+                            class="flex bg-green-700 transform scale-x-125 scale-y-125 rounded-full text-xl text-white h-6 w-6 font-mono items-center justify-center mx-auto">></a>
                     </div>
                 </div>
                 <div class="flex flex-col justify-between p-5 border rounded shadow-xl">
@@ -282,14 +312,14 @@
                         <img src="./img/card-img-3.jpg" alt=""
                             class="items-center lg:mx-auto object-contain lg:object-scale-down">
 
-                        <h6 class="py-4 leading-none font-bold text-lg tracking-wide text-green-700">Branch Lobbies Now
+                        <h6 class="py-4 leading-none font-extrabold text-lg tracking-wide text-green-600">Branch Lobbies Now
                             Open</h6>
                         <p class="mb-3 text-sm tracking-wide pt-2 pb-9">
                             We're so happy to see you again! Our branches have re-opened effective April 18, 2021, with
                             normal business hours...
                         </p>
                         <a href="#"
-                            class="flex bg-green-700 transform scale-x-125 scale-y-125 rounded-full text-white h-6 w-6 font-mono items-center justify-center mx-auto">></a>
+                            class="flex bg-green-700 transform scale-x-125 scale-y-125 rounded-full  text-xl text-white h-6 w-6 font-mono items-center justify-center mx-auto">></a>
                     </div>
                 </div>
             </div>
@@ -306,7 +336,8 @@
                 Find a Branch or ATM
                 <a href="#"
                     class="ml-4 bg-white transform scale-90 rounded-full w-8 text-green-700 mx-auto font-mono text-2xl justify-center">
-                    > </a>
+                    > 
+                </a>
             </p>
         </div>
 
@@ -314,7 +345,7 @@
 
         <!-- MAP COMPONENT -->
 
-        <iframe class="w-screen" height="500px" style="border:0" loading="lazy" allowfullscreen
+        <iframe class="w-screen" height="500px" width="100%" style="border:0" loading="lazy" allowfullscreen
             src="https://www.google.com/maps/embed/v1/search?q=adirondack%20bank%20utica%20ny&key=AIzaSyD6ZtgVqKGaOPwKcEqRJk0QOt5ebQ-4oSU"></iframe>
 
 
