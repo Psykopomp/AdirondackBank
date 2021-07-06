@@ -28,9 +28,7 @@
 <body>
 
 
-
     <!-- NAVBAR COMPONENT -->
-
     <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div class="relative grid items-center grid-cols-2 lg:grid-cols-3">
             <ul class="items-center hidden space-x-8 lg:flex">
@@ -55,6 +53,7 @@
                 </li>
 
             </ul>
+
 
             <!-- MOBILE MENU -->
             <div class="ml-auto lg:hidden">
@@ -124,10 +123,6 @@
     </div>
 
 
-
-
-
-
     <!-- CAMPAIGN CARDS COMPONENT -->
     <div
         class="px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-30 lg:py-20 flex content-center text-center">
@@ -184,9 +179,6 @@
     </div>
 
 
-
-
-
     <!-- DIVIDER COMPONENT -->
     <div class="flex">
         <p
@@ -197,8 +189,9 @@
                 > </a>
         </p>
     </div>
-    <!-- NEWS CARDS COMPONENT -->
 
+
+    <!-- NEWS CARDS COMPONENT -->
     <div
         class="px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-30 lg:py-16 flex content-center">
         <div class="grid gap-6 row-gap-5 sm:grid-cols-1 lg:grid-cols-3">
@@ -251,8 +244,6 @@
 
 
 
-
-
     <!-- DIVIDER COMPONENT -->
     <div class="flex">
         <p
@@ -275,28 +266,43 @@
 
 
     <!-- FOOTER COMPONENT -->
-    <footer class="footer relative pt-1">
-        <div class="container mx-auto px-6">
-            <div class="sm:flex sm:mt-8 pt-5 ">
-                <a href="#" class="flex flex-col">
-                    <img src="img/footer-img.png" alt="adirondack logo" height="25%" width="25%" class="mx-auto">
-                </a>
-            </div>
-        </div>
-        <div class="container mx-auto px-6">
-            <div class="mt-5 flex-row mx-auto text-center">
-                <div class="text-center py-6">
-                    <a href="https://goo.gl/maps/2tMprKgGjq4ptkxF9" class="text-sm text-green-700 font-bold mb-2">
-                        <p>185 Genesee Street
+    <footer class="relative pt-12 pb-24 md:pt-24">
+        <div class="container">
+            <div class="flex flex-col items-center md:flex-row">
+                <div class="flex flex-col items-center md:w-1/3 md:order-2">
+                    <a href="#">
+                        <img src="img/adirondack-logo.png" href="#" alt="Adirondack logo"
+                            class="flex justify-center items-center text-center mx-auto">
+                    </a>
+                    <hr class="w-full my-6 text-black border-black">
+                    <a href="https://goo.gl/maps/2tMprKgGjq4ptkxF9" class="text-sm mb-2">
+                        <p class="text-center italic"><i class="fas fa-map-marker-alt"></i>
+                            185 Genesee Street
                             <br /> Utica, NY 13501
                         </p>
                     </a>
                 </div>
+                <div class="pt-8 md:w-1/3 md:order-1 md:self-end">
+                </div>
+                <div class="pt-8 md:w-1/3 md:order-3 md:self-end md:flex md:justify-end">
+                    <span>
+                        Digital by TRAINOR
+                    </span>
+                </div>
+            </div>
+            <div class="flex flex-col items-center md:flex-row">
+
+            <div class="flex items-start justify-start mt-8 gap-5 text-xs">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
             </div>
         </div>
     </footer>
 
 
+    <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
