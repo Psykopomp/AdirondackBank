@@ -6,6 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/7de259a233.js" crossorigin="anonymous"></script>
+
+
+    <!-- SLICK CAROUSEL -->
+    <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <link rel="shortcut icon" type="image/x-icon" href="https://www.adirondackbank.com/favicon.ico">
     <title>Adirondack Bank</title>
 </head>
@@ -59,324 +74,274 @@
     </div>
 
 
-
-
-    <!-- CAROUSEL COMPONENT-->
+    <!-- CAROUSEL STYLES -->
     <style>
-        .carousel-open:checked+.carousel-item {
-            position: static;
-            opacity: 100;
-        }
-
         .carousel-item {
-            -webkit-transition: opacity 0.6s ease-out;
-            transition: opacity 0.6s ease-out;
-
-        }
-
-        .carousel-item-1 {
-            background-image: url("img/carousel1.png");
+            background-image: url("img/carousel-bg-img.png");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            height: 50vh;
-        }
-
-        .carousel-item-2 {
-            background-color: darkslategray;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            height: 50vh;
-        }
-
-        .carousel-item-3 {
-            background-color: darkslateblue;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            height: 50vh;
-        }
-
-        .carousel-item-4 {
-            background-color: darkseagreen;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            height: 50vh;
-        }
-
-        #carousel-1:checked~.control-1,
-        #carousel-2:checked~.control-2,
-        #carousel-3:checked~.control-3,
-        #carousel-4:checked~.control-4 {
-            display: block;
-        }
-
-        .carousel-indicators {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            position: absolute;
-            bottom: 2%;
-            left: 0;
-            right: 0;
-            text-align: center;
-            z-index: 10;
-        }
-
-
-        #carousel-1:checked~.control-1~.carousel-indicators li:nth-child(1) .carousel-bullet,
-        #carousel-2:checked~.control-2~.carousel-indicators li:nth-child(2) .carousel-bullet,
-        #carousel-3:checked~.control-3~.carousel-indicators li:nth-child(3) .carousel-bullet,
-        #carousel-4:checked~.control-4~.carousel-indicators li:nth-child(4) .carousel-bullet {
-            color: rgba(4, 120, 87);
         }
     </style>
 
-    <!-- Carousel -->
 
-    <div class="carousel w-screen leading-normal tracking-normal">
-
-        <div class="carousel relative shadow-xl bg-white">
-            <div class="carousel-inner relative overflow-hidden w-full">
-                <!--Slide 1-->
-                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
-                    checked="checked">
-                <div class="carousel-item carousel-item-1 transform absolute lg:object-scale-down " style="height:50vh;">
-                    <div class="block h-full w-full text-white text-5xl text-center"></div>
-                </div>
-                <label for="carousel-4"
-                class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-white rounded-full  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-                <label for="carousel-2"
-                class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-white rounded-full  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
-                
-                <!--Slide 2-->
-                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-                <div class="carousel-item carousel-item-2 absolute opacity-0" style="height:50vh;">
-                    <div class="block h-full w-full  text-white text-5xl text-center"></div>
-                </div>
-                <label for="carousel-1"
-                class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-white rounded-full  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-                <label for="carousel-3"
-                    class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-white rounded-full  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
-
-                <!--Slide 3-->
-                <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-                <div class="carousel-item carousel-item-3 absolute opacity-0" style="height:50vh;">
-                    <div class="block h-full w-full text-white text-5xl text-center"></div>
-                </div>
-                <label for="carousel-2"
-                    class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-white rounded-full  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-                <label for="carousel-4"
-                    class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-white rounded-full  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
-
-
-                <!--Slide 4-->
-                <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
-                <div class="carousel-item carousel-item-4 absolute opacity-0" style="height:50vh;">
-                    <div class="block h-full w-full text-white text-5xl text-center">Hello</div>
-                </div>
-                <label for="carousel-3"
-                    class="prev control-4 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-white rounded-full  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-                <label for="carousel-1"
-                    class="next control-4 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-white rounded-full  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
-
-                <!-- Add additional indicators for each slide-->
-                <ol class="carousel-indicators">
-                    <li class="inline-block mr-3">
-                        <label for="carousel-1"
-                            class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-green-700">•</label>
-                    </li>
-                    <li class="inline-block mr-3">
-                        <label for="carousel-2"
-                            class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-green-700">•</label>
-                    </li>
-                    <li class="inline-block mr-3">
-                        <label for="carousel-3"
-                            class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-green-700">•</label>
-                    </li>
-                    <li class="inline-block mr-3">
-                        <label for="carousel-4"
-                            class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-green-700">•</label>
-                    </li>
-                </ol>
-
-            </div>
-        </div>
-        <div />
-
-
-
-
-
-        <!-- CAMPAIGN CARDS COMPONENT -->
-        <div
-            class="px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-30 lg:py-20 flex content-center text-center">
-            <div class="grid gap-6 sm:grid-cols-1 lg:grid-cols-3">
-                <div class="flex flex-col justify-between p-5 border rounded shadow-xl">
-                    <div>
-                        <img src="img/card-placeholder-img.png" alt="placeholder image"
-                            class="items-center mx-auto object-contain lg:object-scale-down">
-
-                        <h4 class="pt-4 leading-none font-extrabold text-lg tracking-wide text-green-600">CAMPAIGN TITLE</h4>
-                        <p class="mb-3 pt-2 font-medium text-medium text-green-500">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet asperiores dignissimos
-                            pariatur magni unde ad, eius,
+    <!-- CAROUSEL COMPONENT -->
+    <div class="responsive flex flex-col items-center">
+        <div class="carousel-item">
+            <div class="container">
+                <div class="flex flex-col items-center py-8 md:flex-row md:justify-center md:py-8 lg:py-12 xl:py-16">
+                    <div class="relative w-full sm-down:w-4/5 md:order-2 md:w-1/2 md:pl-12 xl:w-2/3 xl:pl-48">
+                        <img src="img/lock.svg" alt="cybersecurity tips" class="transform scale-90">
+                        <p class="pt-5 pb-8 text-xl font-light text-center text-white lg:text-2xl">from Adirondack Bank
                         </p>
-                        <p class="font-semibold pt-5 pb-0\.5 tracking-wider transform scale-75">Get Started</p>
-                        <a href="#"
-                            class="flex bg-green-700 transform rounded-full text-xl text-white h-6 w-6 font-mono items-center justify-center mx-auto scale-x-125 scale-y-125">></a>
+                        <div class="flex flex-col justify-center items-center">
+                            <button
+                                class="flex justify-center items-center rounded bg-yellow-400 hover:bg-yellow-300 py-3 px-3 text-xl text-center md:text-2xl">Learn
+                                More</button>
+                        </div>
                     </div>
-                </div>
-                <div class="flex flex-col justify-between p-5 border rounded shadow-xl">
-                    <div>
-                        <img src="img/card-placeholder-img.png" alt="placeholder image"
-                            class="items-center mx-auto object-contain lg:object-scale-down">
-
-                        <h6 class="pt-4 leading-none font-extrabold text-lg tracking-wide text-green-600">CAMPAIGN TITLE</h6>
-                        <p class="mb-3 pt-2 font-medium text-medium text-green-500">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet asperiores dignissimos
-                            pariatur magni unde ad, eius,
-                        </p>
-                        <p class="font-semibold pt-5 pb-0\.5 tracking-wider transform scale-75">Get Started</p>
-                        <a href="#"
-                            class="flex bg-green-700 transform rounded-full text-xl text-white h-6 w-6 font-mono items-center justify-center mx-auto scale-x-125 scale-y-125">></a>
-                    </div>
-                </div>
-                <div class="flex flex-col justify-between p-5 border rounded shadow-xl">
-                    <div>
-                        <img src="img/card-placeholder-img.png" alt="placeholder image"
-                            class="items-center mx-auto object-contain lg:object-scale-down">
-
-                        <h6 class="pt-4 leading-none font-extrabold text-lg tracking-wide text-green-600">CAMPAIGN TITLE</h6>
-                        <p class="mb-3 pt-2 font-medium text-medium text-green-500">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet asperiores dignissimos
-                            pariatur magni unde ad, eius,
-                        </p>
-                        <p class="font-semibold pt-5 pb-0\.5 tracking-wider transform scale-75">Get Started</p>
-                        <a href="#"
-                            class="flex bg-green-700 transform rounded-full text-xl text-white h-6 w-6 font-mono items-center justify-center mx-auto scale-x-125 scale-y-125">></a>
+                    <div class="relative">
+                        <img src="img/computers.svg" alt="" class="transform scale-75 lg:scale-100">
                     </div>
                 </div>
             </div>
         </div>
+        <div class="carousel-item">
+            <div class="container">
 
-
-
-
-
-        <!-- DIVIDER COMPONENT -->
-        <div class="flex">
-            <p
-                class="flex p-4 mx-auto text-center bg-green-700 rounded-r-full text-2xl font-thin tracking-widest text-white  justify-center">
-                Top News & Information
-                <a href="#"
-                    class="ml-4 bg-white transform scale-90 rounded-full w-8 text-green-700 mx-auto font-mono text-2xl justify-center">
-                    > </a>
-            </p>
+            </div>
         </div>
-        <!-- NEWS CARDS COMPONENT -->
+        <div class="carousel-item">
+            <div class="container">
 
-        <div
-            class="px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-30 lg:py-16 flex content-center">
-            <div class="grid gap-6 row-gap-5 sm:grid-cols-1 lg:grid-cols-3">
-                <div class="flex flex-col justify-between p-5 border rounded shadow-xl">
-                    <div>
-                        <img src="img/card-img-1.jpg" alt="news card image"
-                            class="items-center lg:mx-auto object-contain lg:object-scale-down">
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
 
-                        <h6 class="pt-4 pb-2 leading-none font-extrabold text-lg tracking-wide text-green-600">PPP EZ Loan
-                            Forgiveness Form - Instructions, Checklist, & Application</h6>
-                        <p class="mb-3 text-sm tracking-wide pt-1 pb-3">
-                            You (the Borrower) can apply for forgiveness of your Paycheck Protection Program (PPP)...
-                        </p>
-                        <a href="#"
-                            class="flex bg-green-700 transform scale-x-125 scale-y-125 rounded-full text-xl text-white h-6 w-6 font-mono items-center justify-center mx-auto">></a>
-                    </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- CAMPAIGN CARDS COMPONENT -->
+    <div
+        class="px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-30 lg:py-20 flex content-center text-center">
+        <div class="grid gap-6 grid-cols-1 lg:grid-cols-3">
+            <div class="flex flex-col justify-between p-5 border rounded shadow-xl">
+                <div>
+                    <img src="img/card-placeholder-img.png" alt="placeholder image"
+                        class="items-center mx-auto object-contain lg:object-scale-down">
+
+                    <h4 class="pt-4 leading-none font-extrabold text-lg tracking-wide text-green-600">CAMPAIGN TITLE
+                    </h4>
+                    <p class="mb-3 pt-2 font-medium text-medium text-green-500">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet asperiores dignissimos
+                        pariatur magni unde ad, eius,
+                    </p>
+                    <p class="font-semibold pt-5 pb-0\.5 tracking-wider transform scale-75">Get Started</p>
+                    <a href="#"
+                        class="flex bg-green-700 transform rounded-full text-xl text-white h-6 w-6 font-mono items-center justify-center mx-auto scale-x-125 scale-y-125">></a>
                 </div>
-                <div class="flex flex-col justify-between p-5 border rounded shadow-xl">
-                    <div>
-                        <img src="img/card-img-2.jpg" alt="news card image"
-                            class="items-center lg:mx-auto object-contain lg:object-scale-down">
+            </div>
+            <div class="flex flex-col justify-between p-5 border rounded shadow-xl">
+                <div>
+                    <img src="img/card-placeholder-img.png" alt="placeholder image"
+                        class="items-center mx-auto object-contain lg:object-scale-down">
 
-                        <h6 class="py-4 leading-none font-extrabold text-lg tracking-wide text-green-600">PPP Loan Program
-                            Suspended</h6>
-                        <p class="mb-3 text-sm tracking-wide pt-2 pb-9">
-                            The Paycheck Protection Program (PPP) loan program has been suspended. We are no longer able
-                            to accept applications.
-                        </p>
-                        <a href="#"
-                            class="flex bg-green-700 transform scale-x-125 scale-y-125 rounded-full text-xl text-white h-6 w-6 font-mono items-center justify-center mx-auto">></a>
-                    </div>
+                    <h6 class="pt-4 leading-none font-extrabold text-lg tracking-wide text-green-600">CAMPAIGN TITLE
+                    </h6>
+                    <p class="mb-3 pt-2 font-medium text-medium text-green-500">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet asperiores dignissimos
+                        pariatur magni unde ad, eius,
+                    </p>
+                    <p class="font-semibold pt-5 pb-0\.5 tracking-wider transform scale-75">Get Started</p>
+                    <a href="#"
+                        class="flex bg-green-700 transform rounded-full text-xl text-white h-6 w-6 font-mono items-center justify-center mx-auto scale-x-125 scale-y-125">></a>
                 </div>
-                <div class="flex flex-col justify-between p-5 border rounded shadow-xl">
-                    <div>
-                        <img src="./img/card-img-3.jpg" alt="news card image"
-                            class="items-center lg:mx-auto object-contain lg:object-scale-down">
+            </div>
+            <div class="flex flex-col justify-between p-5 border rounded shadow-xl">
+                <div>
+                    <img src="img/card-placeholder-img.png" alt="placeholder image"
+                        class="items-center mx-auto object-contain lg:object-scale-down">
 
-                        <h6 class="py-4 leading-none font-extrabold text-lg tracking-wide text-green-600">Branch Lobbies Now
-                            Open</h6>
-                        <p class="mb-3 text-sm tracking-wide pt-2 pb-9">
-                            We're so happy to see you again! Our branches have re-opened effective April 18, 2021, with
-                            normal business hours...
-                        </p>
-                        <a href="#"
-                            class="flex bg-green-700 transform scale-x-125 scale-y-125 rounded-full  text-xl text-white h-6 w-6 font-mono items-center justify-center mx-auto">></a>
-                    </div>
+                    <h6 class="pt-4 leading-none font-extrabold text-lg tracking-wide text-green-600">CAMPAIGN TITLE
+                    </h6>
+                    <p class="mb-3 pt-2 font-medium text-medium text-green-500">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet asperiores dignissimos
+                        pariatur magni unde ad, eius,
+                    </p>
+                    <p class="font-semibold pt-5 pb-0\.5 tracking-wider transform scale-75">Get Started</p>
+                    <a href="#"
+                        class="flex bg-green-700 transform rounded-full text-xl text-white h-6 w-6 font-mono items-center justify-center mx-auto scale-x-125 scale-y-125">></a>
                 </div>
             </div>
         </div>
+    </div>
 
 
 
 
 
-        <!-- DIVIDER COMPONENT -->
-        <div class="flex">
-            <p
-                class="flex p-4 mx-auto text-center bg-green-700 rounded-l-full text-2xl font-thin tracking-widest text-white  justify-center">
-                Find a Branch or ATM
-                <a href="#"
-                    class="ml-4 bg-white transform scale-90 rounded-full w-8 text-green-700 mx-auto font-mono text-2xl justify-center">
-                    > 
+    <!-- DIVIDER COMPONENT -->
+    <div class="flex">
+        <p
+            class="flex p-4 mx-auto text-center bg-green-700 rounded-r-full text-2xl font-thin tracking-widest text-white  justify-center">
+            Top News & Information
+            <a href="#"
+                class="ml-4 bg-white transform scale-90 rounded-full w-8 text-green-700 mx-auto font-mono text-2xl justify-center">
+                > </a>
+        </p>
+    </div>
+    <!-- NEWS CARDS COMPONENT -->
+
+    <div
+        class="px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-30 lg:py-16 flex content-center">
+        <div class="grid gap-6 row-gap-5 sm:grid-cols-1 lg:grid-cols-3">
+            <div class="flex flex-col justify-between p-5 border rounded shadow-xl">
+                <div>
+                    <img src="img/card-img-1.jpg" alt="news card image"
+                        class="items-center lg:mx-auto object-contain lg:object-scale-down">
+
+                    <h6 class="pt-4 pb-2 leading-none font-extrabold text-lg tracking-wide text-green-600">PPP EZ Loan
+                        Forgiveness Form - Instructions, Checklist, & Application</h6>
+                    <p class="mb-3 text-sm tracking-wide pt-1 pb-3">
+                        You (the Borrower) can apply for forgiveness of your Paycheck Protection Program (PPP)...
+                    </p>
+                    <a href="#"
+                        class="flex bg-green-700 transform scale-x-125 scale-y-125 rounded-full text-xl text-white h-6 w-6 font-mono items-center justify-center mx-auto">></a>
+                </div>
+            </div>
+            <div class="flex flex-col justify-between p-5 border rounded shadow-xl">
+                <div>
+                    <img src="img/card-img-2.jpg" alt="news card image"
+                        class="items-center lg:mx-auto object-contain lg:object-scale-down">
+
+                    <h6 class="py-4 leading-none font-extrabold text-lg tracking-wide text-green-600">PPP Loan Program
+                        Suspended</h6>
+                    <p class="mb-3 text-sm tracking-wide pt-2 pb-9">
+                        The Paycheck Protection Program (PPP) loan program has been suspended. We are no longer able
+                        to accept applications.
+                    </p>
+                    <a href="#"
+                        class="flex bg-green-700 transform scale-x-125 scale-y-125 rounded-full text-xl text-white h-6 w-6 font-mono items-center justify-center mx-auto">></a>
+                </div>
+            </div>
+            <div class="flex flex-col justify-between p-5 border rounded shadow-xl">
+                <div>
+                    <img src="./img/card-img-3.jpg" alt="news card image"
+                        class="items-center lg:mx-auto object-contain lg:object-scale-down">
+
+                    <h6 class="py-4 leading-none font-extrabold text-lg tracking-wide text-green-600">Branch Lobbies Now
+                        Open</h6>
+                    <p class="mb-3 text-sm tracking-wide pt-2 pb-9">
+                        We're so happy to see you again! Our branches have re-opened effective April 18, 2021, with
+                        normal business hours...
+                    </p>
+                    <a href="#"
+                        class="flex bg-green-700 transform scale-x-125 scale-y-125 rounded-full  text-xl text-white h-6 w-6 font-mono items-center justify-center mx-auto">></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- DIVIDER COMPONENT -->
+    <div class="flex">
+        <p
+            class="flex p-4 mx-auto text-center bg-green-700 rounded-l-full text-2xl font-thin tracking-widest text-white  justify-center">
+            Find a Branch or ATM
+            <a href="#"
+                class="ml-4 bg-white transform scale-90 rounded-full w-8 text-green-700 mx-auto font-mono text-2xl justify-center">
+                >
+            </a>
+        </p>
+    </div>
+
+
+
+    <!-- MAP COMPONENT -->
+
+    <iframe class="w-screen" height="500px" width="100%" style="border:0" loading="lazy" allowfullscreen
+        src="https://www.google.com/maps/embed/v1/search?q=adirondack%20bank%20utica%20ny&key=AIzaSyD6ZtgVqKGaOPwKcEqRJk0QOt5ebQ-4oSU"></iframe>
+
+
+
+    <!-- FOOTER COMPONENT -->
+    <footer class="footer relative pt-1">
+        <div class="container mx-auto px-6">
+            <div class="sm:flex sm:mt-8 pt-5 ">
+                <a href="#" class="flex flex-col">
+                    <img src="img/footer-img.png" alt="adirondack logo" height="25%" width="25%" class="mx-auto">
                 </a>
-            </p>
+            </div>
         </div>
-
-
-
-        <!-- MAP COMPONENT -->
-
-        <iframe class="w-screen" height="500px" width="100%" style="border:0" loading="lazy" allowfullscreen
-            src="https://www.google.com/maps/embed/v1/search?q=adirondack%20bank%20utica%20ny&key=AIzaSyD6ZtgVqKGaOPwKcEqRJk0QOt5ebQ-4oSU"></iframe>
-
-
-
-        <!-- FOOTER COMPONENT -->
-        <footer class="footer relative pt-1">
-            <div class="container mx-auto px-6">
-                <div class="sm:flex sm:mt-8 pt-5 ">
-                    <a href="#" class="flex flex-col">
-                        <img src="img/footer-img.png" alt="adirondack logo" height="25%" width="25%" class="mx-auto">
+        <div class="container mx-auto px-6">
+            <div class="mt-5 flex-row mx-auto text-center">
+                <div class="text-center py-6">
+                    <a href="https://goo.gl/maps/2tMprKgGjq4ptkxF9" class="text-sm text-green-700 font-bold mb-2">
+                        <p>185 Genesee Street
+                            <br /> Utica, NY 13501
+                        </p>
                     </a>
                 </div>
             </div>
-            <div class="container mx-auto px-6">
-                <div class="mt-5 flex-row mx-auto text-center">
-                    <div class="text-center py-6">
-                        <a href="https://goo.gl/maps/2tMprKgGjq4ptkxF9" class="text-sm text-green-700 font-bold mb-2">
-                            <p>185 Genesee Street
-                                <br /> Utica, NY 13501
-                            </p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        </div>
+    </footer>
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript">
+        $('.responsive').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true,
+                        arrows: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+
+    </script>
 </body>
 
 </html>
