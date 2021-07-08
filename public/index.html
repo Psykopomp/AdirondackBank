@@ -152,13 +152,112 @@
             width: 200%;
             z-index: 0;
         }
+
+        /* Arrows */
+        .slick-prev,
+        .slick-next
+        {
+            font-size: 0;
+            line-height: 0;
+
+            position: absolute;
+            top: 50%;
+
+            display: block;
+
+            width: 20px;
+            height: 20px;
+            padding: 0;
+            -webkit-transform: translate(0, -50%);
+            -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+
+            cursor: pointer;
+
+            color: transparent;
+            border: none;
+            outline: none;
+        }
+        .slick-prev:hover,
+        .slick-prev:focus,
+        .slick-next:hover,
+        .slick-next:focus
+        {
+            color: transparent;
+            outline: none;
+            background: transparent;
+        }
+        .slick-prev:hover:before,
+        .slick-prev:focus:before,
+        .slick-next:hover:before,
+        .slick-next:focus:before
+        {
+            opacity: 1;
+        }
+        .slick-prev.slick-disabled:before,
+        .slick-next.slick-disabled:before
+        {
+            opacity: .25;
+        }
+
+        .slick-prev:before,
+        .slick-next:before
+        {
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: 25px;
+            line-height: 1;
+            color: white;
+
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .slick-prev{
+            left: 40px;
+            width: 50px;
+            height: 50px;
+            z-index: 999;
+        }
+        [dir='rtl'] .slick-prev
+        {
+            right: 40px;
+            left: auto;
+        }
+        .slick-prev:before
+        {
+            content: '\f053';
+        }
+        [dir='rtl'] .slick-prev:before
+        {
+            content: '\f054';
+        }
+
+        .slick-next{
+            right: 40px;
+            width: 50px;
+            height: 50px;
+            z-index: 999;
+        }
+
+
+        [dir='rtl'] .slick-next
+        {
+            right: auto;
+            left: -25px;
+        }
+        .slick-next:before
+        {
+            content: '\f054';
+        }
+        [dir='rtl'] .slick-next:before
+        {
+            content: '←';
+        }
+
     </style>
 
 
 
-    <!-- CAROUSEL ARROWS TEMP HOUSING -->
-    <!-- <i class="fas fa-chevron-left text-white prev"></i>
-    <i class="fas fa-chevron-right text-white next"></i> -->
 
 
     <!-- CAROUSEL COMPONENT -->
@@ -203,14 +302,42 @@
                 </div>
             </div>
         </div>
-        <div class="carousel-item">
-            <div class="container">
-
+        <div class="carousel-item carousel-content">
+            <div class="container overflow-hidden">
+                <div class="flex flex-col items-center py-8 md:flex-row md:justify-center md:py-8 lg:py-12 xl:py-16">
+                    <div class="relative w-full sm-down:w-4/5 md:order-2 md:w-1/2 md:pl-12 xl:w-2/3 xl:pl-48">
+                        <img src="img/lock.svg" alt="cybersecurity tips" class="transform scale-90">
+                        <p class="pt-5 pb-8 text-xl font-light text-center text-white lg:text-2xl">from Adirondack Bank
+                        </p>
+                        <div class="flex flex-col justify-center items-center">
+                            <button
+                                class="flex justify-center items-center rounded bg-yellow-400 hover:bg-yellow-300 py-3 px-3 text-xl text-center md:text-2xl">Learn
+                                More</button>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="img/computers.svg" alt="" class="transform scale-75 lg:scale-100">
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="carousel-item">
-            <div class="container">
-
+        <div class="carousel-item carousel-content">
+            <div class="container overflow-hidden">
+                <div class="flex flex-col items-center py-8 md:flex-row md:justify-center md:py-8 lg:py-12 xl:py-16">
+                    <div class="relative w-full sm-down:w-4/5 md:order-2 md:w-1/2 md:pl-12 xl:w-2/3 xl:pl-48">
+                        <img src="img/lock.svg" alt="cybersecurity tips" class="transform scale-90">
+                        <p class="pt-5 pb-8 text-xl font-light text-center text-white lg:text-2xl">from Adirondack Bank
+                        </p>
+                        <div class="flex flex-col justify-center items-center">
+                            <button
+                                class="flex justify-center items-center rounded bg-yellow-400 hover:bg-yellow-300 py-3 px-3 text-xl text-center md:text-2xl">Learn
+                                More</button>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="img/computers.svg" alt="" class="transform scale-75 lg:scale-100">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
